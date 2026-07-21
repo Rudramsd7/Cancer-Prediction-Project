@@ -1,0 +1,16 @@
+{
+  "id": "rudradahikar/cancer-treatment-cost-prediction",
+  "title": "Cancer Treatment Cost Prediction",
+  "code_file": "cancer_cost_prediction.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "rudradahikar/cancer-prediction-dataset"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}

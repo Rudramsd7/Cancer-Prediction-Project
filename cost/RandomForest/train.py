@@ -1,0 +1,15 @@
+import pandas as pd
+from sklearn.ensemble import RandomForestRegressor
+import joblib
+
+df=pd.read_csv("cancer_ml_prediction/cost/train.csv",index_col=0)
+
+x=df.drop("Treatment_Cost_USD",axis=1)
+y=df["Treatment_Cost_USD"]
+
+regressor=RandomForestRegressor(max_depth=15)
+regressor.fit(x,y)
+
+
+joblib.dump(regressor,"cancer_ml_prediction/cost/RandomForest/train_model.dat")
+
